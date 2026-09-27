@@ -8,6 +8,9 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
+      workbox: {
+        globStrict: false
+      },
       manifest: {
         name: 'Site Inventory PWA',
         short_name: 'SiteInventory',
