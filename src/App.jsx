@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { supabase } from './Services/supabaseClient';
+import { supabase } from './supabaseClient'; // Updated path
 import { PackageCheck, Truck, ClipboardList, LogOut, Layers, PackagePlus, FileText, Printer, Search, Bell, ChevronDown } from 'lucide-react';
 import * as XLSX from 'xlsx';
-
 export default function App() {
   const [session, setSession] = useState(null);
   const [userRole, setUserRole] = useState(null);
